@@ -6,25 +6,22 @@ Professional portfolio focused on mechanical design, CAD drafting, FEA / enginee
 - `index.html` — portfolio content, including the editable hero photo control
 - `styles.css` — website styling
 - `script.js` — photo and text editor behaviour
+- `.github/workflows/pages.yml` — builds and deploys the website to GitHub Pages
 
-## Still required before the website is complete
-Upload the full `assets/` folder from the supplied portfolio package. It contains the project photos, CAD / CFD images and résumé referenced by `index.html`. Without these files, images and the résumé link will not load.
+## Add the project images and résumé
+The website refers to files inside `assets/`. I prepared a single archive containing the supplied project photos, CAD / CFD images and CV.
 
-Keep the folder structure as:
-```
-assets/
-  label-floor.jpg
-  label-cad.jpg
-  ...
-  Dinesh_Maduranga_CV.pdf
-```
+1. Download `portfolio-assets.zip` from the ChatGPT conversation.
+2. In this repository, select **Add file → Upload files**.
+3. Upload `portfolio-assets.zip) to the repository root and commit it to `main`.
 
-## Enable GitHub Pages
+The Pages workflow automatically extracts the archive into the website build. The ZIP itself is not included in the published site.
+
+## Enable GitHub Pages (one-time setting)
 1. Open **Settings → Pages** in this repository.
 2. Under **Build and deployment**, select **GitHub Actions** as the source.
-3. The included workflow deploys the contents of the repository when a change is pushed to `main`.
 
-Once the assets are uploaded and Pages is enabled, the project site address will be:
+After the assets archive is uploaded and Pages is enabled, the project site address will be:
 https://di651.github.io/dinesh-maduranga-portfolio/
 
 ## Editing notes
